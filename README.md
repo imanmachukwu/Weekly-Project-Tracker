@@ -15,10 +15,6 @@
 - **MVVM Architecture**: Implementing Model-View-ViewModel architecture for better code organization and scalability.
 - **Swift Package Manager**: Managing dependencies and packages efficiently.
 
-## Screenshots
-
-*Include relevant screenshots here to showcase the app's interface and features.*
-
 ## Installation
 
 To run the Weekly Project Tracker app locally:
