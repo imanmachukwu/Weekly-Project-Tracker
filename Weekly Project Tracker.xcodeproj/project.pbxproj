@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		FAC722A42DAF5F0C0098AF04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAC7228B2DAF5F0A0098AF04 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAC722922DAF5F0A0098AF04;
+			remoteInfo = "Weekly Project Tracker";
+		};
+		FAC722AE2DAF5F0C0098AF04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAC7228B2DAF5F0A0098AF04 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAC722922DAF5F0A0098AF04;
+			remoteInfo = "Weekly Project Tracker";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FAC722932DAF5F0A0098AF04 /* Weekly Project Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Weekly Project Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAC722A32DAF5F0C0098AF04 /* Weekly Project TrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Weekly Project TrackerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAC722AD2DAF5F0C0098AF04 /* Weekly Project TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Weekly Project TrackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		FAC722952DAF5F0A0098AF04 /* Weekly Project Tracker */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Weekly Project Tracker";
+			sourceTree = "<group>";
+		};
+		FAC722A62DAF5F0C0098AF04 /* Weekly Project TrackerTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Weekly Project TrackerTests";
+			sourceTree = "<group>";
+		};
+		FAC722B02DAF5F0C0098AF04 /* Weekly Project TrackerUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Weekly Project TrackerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAC722902DAF5F0A0098AF04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC722A02DAF5F0C0098AF04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC722AA2DAF5F0C0098AF04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FAC7228A2DAF5F0A0098AF04 = {
+			isa = PBXGroup;
+			children = (
+				FAC722952DAF5F0A0098AF04 /* Weekly Project Tracker */,
+				FAC722A62DAF5F0C0098AF04 /* Weekly Project TrackerTests */,
+				FAC722B02DAF5F0C0098AF04 /* Weekly Project TrackerUITests */,
+				FAC722942DAF5F0A0098AF04 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAC722942DAF5F0A0098AF04 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAC722932DAF5F0A0098AF04 /* Weekly Project Tracker.app */,
+				FAC722A32DAF5F0C0098AF04 /* Weekly Project TrackerTests.xctest */,
+				FAC722AD2DAF5F0C0098AF04 /* Weekly Project TrackerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAC722922DAF5F0A0098AF04 /* Weekly Project Tracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAC722B72DAF5F0C0098AF04 /* Build configuration list for PBXNativeTarget "Weekly Project Tracker" */;
+			buildPhases = (
+				FAC7228F2DAF5F0A0098AF04 /* Sources */,
+				FAC722902DAF5F0A0098AF04 /* Frameworks */,
+				FAC722912DAF5F0A0098AF04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				FAC722952DAF5F0A0098AF04 /* Weekly Project Tracker */,
+			);
+			name = "Weekly Project Tracker";
+			packageProductDependencies = (
+			);
+			productName = "Weekly Project Tracker";
+			productReference = FAC722932DAF5F0A0098AF04 /* Weekly Project Tracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FAC722A22DAF5F0C0098AF04 /* Weekly Project TrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAC722BA2DAF5F0C0098AF04 /* Build configuration list for PBXNativeTarget "Weekly Project TrackerTests" */;
+			buildPhases = (
+				FAC7229F2DAF5F0C0098AF04 /* Sources */,
+				FAC722A02DAF5F0C0098AF04 /* Frameworks */,
+				FAC722A12DAF5F0C0098AF04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAC722A52DAF5F0C0098AF04 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				FAC722A62DAF5F0C0098AF04 /* Weekly Project TrackerTests */,
+			);
+			name = "Weekly Project TrackerTests";
+			packageProductDependencies = (
+			);
+			productName = "Weekly Project TrackerTests";
+			productReference = FAC722A32DAF5F0C0098AF04 /* Weekly Project TrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FAC722AC2DAF5F0C0098AF04 /* Weekly Project TrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAC722BD2DAF5F0C0098AF04 /* Build configuration list for PBXNativeTarget "Weekly Project TrackerUITests" */;
+			buildPhases = (
+				FAC722A92DAF5F0C0098AF04 /* Sources */,
+				FAC722AA2DAF5F0C0098AF04 /* Frameworks */,
+				FAC722AB2DAF5F0C0098AF04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAC722AF2DAF5F0C0098AF04 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				FAC722B02DAF5F0C0098AF04 /* Weekly Project TrackerUITests */,
+			);
+			name = "Weekly Project TrackerUITests";
+			packageProductDependencies = (
+			);
+			productName = "Weekly Project TrackerUITests";
+			productReference = FAC722AD2DAF5F0C0098AF04 /* Weekly Project TrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAC7228B2DAF5F0A0098AF04 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					FAC722922DAF5F0A0098AF04 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					FAC722A22DAF5F0C0098AF04 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = FAC722922DAF5F0A0098AF04;
+					};
+					FAC722AC2DAF5F0C0098AF04 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = FAC722922DAF5F0A0098AF04;
+					};
+				};
+			};
+			buildConfigurationList = FAC7228E2DAF5F0A0098AF04 /* Build configuration list for PBXProject "Weekly Project Tracker" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAC7228A2DAF5F0A0098AF04;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = FAC722942DAF5F0A0098AF04 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAC722922DAF5F0A0098AF04 /* Weekly Project Tracker */,
+				FAC722A22DAF5F0C0098AF04 /* Weekly Project TrackerTests */,
+				FAC722AC2DAF5F0C0098AF04 /* Weekly Project TrackerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAC722912DAF5F0A0098AF04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC722A12DAF5F0C0098AF04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC722AB2DAF5F0C0098AF04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAC7228F2DAF5F0A0098AF04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC7229F2DAF5F0C0098AF04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC722A92DAF5F0C0098AF04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAC722A52DAF5F0C0098AF04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAC722922DAF5F0A0098AF04 /* Weekly Project Tracker */;
+			targetProxy = FAC722A42DAF5F0C0098AF04 /* PBXContainerItemProxy */;
+		};
+		FAC722AF2DAF5F0C0098AF04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAC722922DAF5F0A0098AF04 /* Weekly Project Tracker */;
+			targetProxy = FAC722AE2DAF5F0C0098AF04 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FAC722B52DAF5F0C0098AF04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FAC722B62DAF5F0C0098AF04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAC722B82DAF5F0C0098AF04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Weekly Project Tracker/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "xyz.imanma.Weekly-Project-Tracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FAC722B92DAF5F0C0098AF04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Weekly Project Tracker/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "xyz.imanma.Weekly-Project-Tracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FAC722BB2DAF5F0C0098AF04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "xyz.imanma.Weekly-Project-TrackerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Weekly Project Tracker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Weekly Project Tracker";
+			};
+			name = Debug;
+		};
+		FAC722BC2DAF5F0C0098AF04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "xyz.imanma.Weekly-Project-TrackerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Weekly Project Tracker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Weekly Project Tracker";
+			};
+			name = Release;
+		};
+		FAC722BE2DAF5F0C0098AF04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "xyz.imanma.Weekly-Project-TrackerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Weekly Project Tracker";
+			};
+			name = Debug;
+		};
+		FAC722BF2DAF5F0C0098AF04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "xyz.imanma.Weekly-Project-TrackerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Weekly Project Tracker";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAC7228E2DAF5F0A0098AF04 /* Build configuration list for PBXProject "Weekly Project Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAC722B52DAF5F0C0098AF04 /* Debug */,
+				FAC722B62DAF5F0C0098AF04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAC722B72DAF5F0C0098AF04 /* Build configuration list for PBXNativeTarget "Weekly Project Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAC722B82DAF5F0C0098AF04 /* Debug */,
+				FAC722B92DAF5F0C0098AF04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAC722BA2DAF5F0C0098AF04 /* Build configuration list for PBXNativeTarget "Weekly Project TrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAC722BB2DAF5F0C0098AF04 /* Debug */,
+				FAC722BC2DAF5F0C0098AF04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAC722BD2DAF5F0C0098AF04 /* Build configuration list for PBXNativeTarget "Weekly Project TrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAC722BE2DAF5F0C0098AF04 /* Debug */,
+				FAC722BF2DAF5F0C0098AF04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAC7228B2DAF5F0A0098AF04 /* Project object */;
+}
