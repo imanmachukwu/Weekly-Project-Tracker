@@ -23,6 +23,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		FAC722F42DAF62510098AF04 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		FAC722932DAF5F0A0098AF04 /* Weekly Project Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Weekly Project Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC722A32DAF5F0C0098AF04 /* Weekly Project TrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Weekly Project TrackerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -33,16 +46,6 @@
 		FAC722952DAF5F0A0098AF04 /* Weekly Project Tracker */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "Weekly Project Tracker";
-			sourceTree = "<group>";
-		};
-		FAC722A62DAF5F0C0098AF04 /* Weekly Project TrackerTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Weekly Project TrackerTests";
-			sourceTree = "<group>";
-		};
-		FAC722B02DAF5F0C0098AF04 /* Weekly Project TrackerUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Weekly Project TrackerUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -76,8 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				FAC722952DAF5F0A0098AF04 /* Weekly Project Tracker */,
-				FAC722A62DAF5F0C0098AF04 /* Weekly Project TrackerTests */,
-				FAC722B02DAF5F0C0098AF04 /* Weekly Project TrackerUITests */,
 				FAC722942DAF5F0A0098AF04 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -102,6 +103,7 @@
 				FAC7228F2DAF5F0A0098AF04 /* Sources */,
 				FAC722902DAF5F0A0098AF04 /* Frameworks */,
 				FAC722912DAF5F0A0098AF04 /* Resources */,
+				FAC722F42DAF62510098AF04 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
@@ -130,9 +132,6 @@
 			dependencies = (
 				FAC722A52DAF5F0C0098AF04 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				FAC722A62DAF5F0C0098AF04 /* Weekly Project TrackerTests */,
-			);
 			name = "Weekly Project TrackerTests";
 			packageProductDependencies = (
 			);
@@ -152,9 +151,6 @@
 			);
 			dependencies = (
 				FAC722AF2DAF5F0C0098AF04 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				FAC722B02DAF5F0C0098AF04 /* Weekly Project TrackerUITests */,
 			);
 			name = "Weekly Project TrackerUITests";
 			packageProductDependencies = (
