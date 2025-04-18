@@ -14,16 +14,19 @@
 
  @main
  struct WeeklyProjectTrackerApp: App {
+  @StateObject var projectData = ProjectData()
+  
   var body: some Scene {
   WindowGroup {
   ContentView()
+  .environmentObject(projectData)
   }
   }
  }
  
 
 struct ContentView: View {
-    @State private var projects: [Project] = []
+    @EnvironmentObject var projectData: ProjectData
     @State private var isAddingProject = false
     @State private var gradientStart = UnitPoint.topLeading
     @State private var gradientEnd = UnitPoint.bottomTrailing
@@ -32,15 +35,16 @@ struct ContentView: View {
         VStack {
             NavigationView {
                 VStack {
-                    CalendarView(projects: projects)
+                    CalendarView(projects: projectData.projects)
                     List {
-                        ForEach(projects) { project in
+                        ForEach(projectData.projects) { project in
                             HStack {
                                 Rectangle()
                                     .fill(project.color.color)
                                     .frame(width: 5)
                                     .cornerRadius(2.5)
-                                NavigationLink(destination: ProjectDetailView(project: project)) {
+                                NavigationLink(destination: ProjectDetailView(project: project)
+                                        .environmentObject(projectData)) {
                                     Text(project.name)
                                         .padding(.vertical, 8)
                                 }
@@ -60,7 +64,12 @@ struct ContentView: View {
                     }
                 }
             }
-            if projects.isEmpty {
+            .sheet(isPresented: $isAddingProject) {
+                AddProjectView(onProjectAdded: { project in
+                })
+                .environmentObject(projectData)
+            }
+            if projectData.projects.isEmpty {
                 Text("Click the plus button to add a new project")
                     .font(.caption)
                     .foregroundColor(.gray)
@@ -71,5 +80,6 @@ struct ContentView: View {
 }
 
  #Preview {
-  ContentView()
+    ContentView()
+        .environmentObject(ProjectData()) 
  }

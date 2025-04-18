@@ -12,6 +12,8 @@ struct ProjectDetailView: View, Identifiable {
     @State private var aiResponse: String = "Generating AI overview..."
     let id = UUID()
     @State private var hasGeneratedAIOverview = false
+    @Environment(\.presentationMode) var presentationMode
+    @EnvironmentObject var projectData: ProjectData
 
     var body: some View {
         List {
@@ -26,10 +28,21 @@ struct ProjectDetailView: View, Identifiable {
         }
         .frame(maxHeight: .infinity)
         .navigationTitle(project.name)
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button(action: {
+                    projectData.deleteProject(project)
+                    presentationMode.wrappedValue.dismiss()
+                }) {
+                    Image(systemName: "trash")
+                }
+            }
+        }
         .onAppear {
-            if !hasGeneratedAIOverview {
+            if project.aiOverview == nil {
                 generateAIOverview()
-                hasGeneratedAIOverview = true
+            } else {
+                aiResponse = project.aiOverview ?? "No overview available"
             }
         }
     }
@@ -72,7 +85,7 @@ struct ProjectDetailView: View, Identifiable {
                 return
             }
 
-            //print("RAW RESPONSE:\n", String(data: data, encoding: .utf8) ?? "Unable to decode data")
+            print("RAW RESPONSE:\n", String(data: data, encoding: .utf8) ?? "Unable to decode data")
 
             do {
                 if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any],
@@ -86,6 +99,7 @@ struct ProjectDetailView: View, Identifiable {
                         .trimmingCharacters(in: .whitespacesAndNewlines)
                     DispatchQueue.main.async {
                         aiResponse = cleanedContent
+                        projectData.updateAIOverview(for: project, with: cleanedContent)
                     }
                 } else {
                     print("Error: Could not parse choices from JSON")

@@ -22,44 +22,46 @@
   @State private var dailyGoal7: String = ""
   @State private var selectedColor: ProjectColor = .red
   @Environment(\.presentationMode) var presentationMode
+  @Environment(\.managedObjectContext) private var viewContext
+  @EnvironmentObject var projectData: ProjectData
   var onProjectAdded: (Project) -> Void
- 
 
   var body: some View {
-  List {
-  Section(header: Text("Project Details")) {
-  TextField("Project Name", text: $projectName)
-  DatePicker("Start Date", selection: $startDate, displayedComponents: .date)
-  DatePicker("End Date", selection: $endDate, displayedComponents: .date)
-  Picker("Color", selection: $selectedColor) {
-  ForEach(ProjectColor.allCases, id: \.self) { color in
-  Text(color.rawValue.capitalized)
-  }
-  }
-  }
-  Section(header: Text("Daily Goals")) {
-  TextField("Day 1", text: $dailyGoal1)
-  TextField("Day 2", text: $dailyGoal2)
-  TextField("Day 3", text: $dailyGoal3)
-  TextField("Day 4", text: $dailyGoal4)
-  TextField("Day 5", text: $dailyGoal5)
-  TextField("Day 6", text: $dailyGoal6)
-  TextField("Day 7", text: $dailyGoal7)
-  }
-  Button("Add Project") {
-  let newProject = Project(name: projectName, startDate: startDate, endDate: endDate, dailyGoals: [
-  DailyGoal(description: dailyGoal1),
-  DailyGoal(description: dailyGoal2),
-  DailyGoal(description: dailyGoal3),
-  DailyGoal(description: dailyGoal4),
-  DailyGoal(description: dailyGoal5),
-  DailyGoal(description: dailyGoal6),
-  DailyGoal(description: dailyGoal7)
-  ], color: selectedColor)
-  onProjectAdded(newProject)
-  presentationMode.wrappedValue.dismiss()
-  }
-  }
-  .navigationTitle("Add New Project")
+   List {
+    Section(header: Text("Project Details")) {
+     TextField("Project Name", text: $projectName)
+     DatePicker("Start Date", selection: $startDate, displayedComponents: .date)
+     DatePicker("End Date", selection: $endDate, displayedComponents: .date)
+     Picker("Color", selection: $selectedColor) {
+      ForEach(ProjectColor.allCases, id: \.self) { color in
+       Text(color.rawValue.capitalized)
+      }
+     }
+    }
+    Section(header: Text("Daily Goals")) {
+     TextField("Day 1", text: $dailyGoal1)
+     TextField("Day 2", text: $dailyGoal2)
+     TextField("Day 3", text: $dailyGoal3)
+     TextField("Day 4", text: $dailyGoal4)
+     TextField("Day 5", text: $dailyGoal5)
+     TextField("Day 6", text: $dailyGoal6)
+     TextField("Day 7", text: $dailyGoal7)
+    }
+    Button("Add Project") {
+     let newProject = Project(name: projectName, startDate: startDate, endDate: endDate, dailyGoals: [
+      DailyGoal(description: dailyGoal1, isCompleted: false),
+      DailyGoal(description: dailyGoal2, isCompleted: false),
+      DailyGoal(description: dailyGoal3, isCompleted: false),
+      DailyGoal(description: dailyGoal4, isCompleted: false),
+      DailyGoal(description: dailyGoal5, isCompleted: false),
+      DailyGoal(description: dailyGoal6, isCompleted: false),
+      DailyGoal(description: dailyGoal7, isCompleted: false)
+     ], color: selectedColor)
+     projectData.addProject(newProject)
+     onProjectAdded(newProject)
+     presentationMode.wrappedValue.dismiss()
+    }
+   }
+   .navigationTitle("Add New Project")
   }
  }
