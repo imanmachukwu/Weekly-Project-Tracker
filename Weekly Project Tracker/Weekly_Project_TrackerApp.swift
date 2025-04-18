@@ -14,15 +14,20 @@
 
  @main
  struct WeeklyProjectTrackerApp: App {
-  @StateObject var projectData = ProjectData()
-  
-  var body: some Scene {
-  WindowGroup {
-  ContentView()
-  .environmentObject(projectData)
-  }
-  }
- }
+    @StateObject var projectData = ProjectData()
+    @AppStorage("hasSeenOnboarding") private var hasSeenOnboarding = false
+
+    var body: some Scene {
+        WindowGroup {
+            if hasSeenOnboarding {
+                ContentView()
+                    .environmentObject(projectData)
+            } else {
+                OnboardingView(hasFinished: $hasSeenOnboarding)
+            }
+        }
+    }
+}
  
 
 struct ContentView: View {

@@ -9,6 +9,10 @@ class ProjectData: ObservableObject {
 
     init() {
         loadProjects()
+        autoDeleteProjects()
+        Timer.scheduledTimer(withTimeInterval: 86400, repeats: true) { _ in
+            self.autoDeleteProjects()
+        }
     }
 
     let projectsKey = "ProjectsKey"
@@ -38,6 +42,15 @@ class ProjectData: ObservableObject {
     func updateAIOverview(for project: Project, with overview: String) {
         if let index = projects.firstIndex(where: { $0.id == project.id }) {
             projects[index].aiOverview = overview
+        }
+    }
+
+    func autoDeleteProjects() {
+        let now = Date()
+        for project in projects {
+            if project.endDate < now {
+                deleteProject(project)
+            }
         }
     }
 
